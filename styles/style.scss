@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  margin-top: 15px;
+  margin-left: 78px;
+  color: #fff;
+  border-collapse: collapse;
+}
+.table thead tr {
+  background: #474955;
+  height: 54px;
+}
+.table thead tr:nth-child(1) {
+  border-bottom: 1px solid #a5a2a2;
+}
+.table th:nth-child(1) {
+  width: 300px;
+}
+.table th:nth-child(2) {
+  width: 480px;
+}
+.table th:nth-child(3) {
+  width: 130px;
+}
+.table th:nth-child(4) {
+  width: 182px;
+}
+tbody {
+  color: #474955;
+  text-align: center;
+}
+tbody tr td {
+  border: 1px solid #e3e6ec;
+  word-break: break-all;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+tr td:nth-child(n + 2) {
+  text-align: left;
+}
+.table tr td:nth-child(n + 2):hover {
+  cursor: pointer;
+  color: #31f91e;
+}
+.loader {
+  width: 300px;
+  margin: 100px 0;
+}
+.activ {
+  transform: rotate(180deg);
+}
+.activ_1 {
+  color: #31f91e;
+  margin-top: -5px;
+}
+.item {
+	cursor: pointer;
+	&:hover {
+		color: #31f91e;
+		transform: scale(1.2);
+	}
+}
+
+.navigation {
+  width: 50%;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 20px;
+  font-weight: 700;
+	gap: 20px;
+}
+.button {
+  border: none;
+  background: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+	&:hover {
+		color: #31f91e;
+		transform: scale(1.1);
+	}
+	&:active {
+		color: #0a9a46;
+		transform: scale(1.1);
+	}
+}
+.button-reset {
+  padding: 4px;
+  border-radius: 4px;
+  &:hover {
+    border: 1px solid #31f91e;
+  }
+  &:active {
+    border: 1px solid #f60c0c;
+    color: #f31313;
+  }
+}
+
+@media (max-width: 520px) {
+  th img:nth-child(1){
+    margin-left: 5px;
+  }
+  th img:nth-child(2){
+    margin-left: 5px;
+  }
+  th img:nth-child(3){
+    margin-left: 5px;
+  }
+  .table th:nth-child(1) {
+    width: 70px;
+  }
+  .table th:nth-child(2) {
+    width: 130px;
+  }
+  .table th:nth-child(3) {
+    width: 140px;
+  }
+  
+}

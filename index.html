@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Valantis</title>
+	<link rel="stylesheet" href="styles/style.css">
+	
+</head>
+<body>
+	<table class='table'>
+		<thead >
+			<tr style='height: 80px;'>
+				<th colSpan='2'><button class='button button-reset filter'>Сбросить фильтры</button></th>
+				<th colSpan='2'><button class='button button-reset reset'>Перезагрузка</button></th>
+			</tr>
+			<tr>
+				<th>ID</th>
+				<th>Название</th>
+				<th>Цена</th>
+				<th>Бренд</th>
+			</tr>
+		</thead>
+		<tbody class='tbody'></tbody>
+	</table>
+	<img class='loader' src='./image/three-dots.svg'/>
+	<div class='navigation'>
+		<button class='button buttonBack'>Назад</button>
+		<div class="pagination"></div>
+		<button class='button buttonNext'>Далее</button>
+	</div>
+	<script  src="md5.min.js"></script>
+	<script  src="axios.min.js"></script>
+	<script  src="index.js"></script>
+</body>
+</html>
