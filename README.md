@@ -1,1 +1,1 @@
-# valantis_js
+megalitt.github.io/valantis_js/
