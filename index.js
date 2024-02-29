@@ -69,7 +69,7 @@ async function  getPage(currentPage, perPage, filter) {
         addTable(arr)
         loader.style.display = 'none'
         navigate.style.display = 'flex'
-        if(filter !== null && items.length < 50){
+        if(filter !== null){
           navigate.style.display = 'none'
         }
       })
